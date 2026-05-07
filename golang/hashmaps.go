@@ -2,19 +2,19 @@ package golang
 
 import "fmt"
 
-// Given an array of strings words, return the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below.
-//
-// Note that the strings are case-insensitive, both lowercased and uppercased of the same letter are treated as if they are at the same row.
-//
-// In the American keyboard:
-//
-// the first row consists of the characters "qwertyuiop",
-// the second row consists of the characters "asdfghjkl", and
-// the third row consists of the characters "zxcvbnm".
-// Input: words = ["Hello","Alaska","Dad","Peace"]
-// Output: ["Alaska","Dad"]
-// Explanation:
-// Both "a" and "A" are in the 2nd row of the American keyboard due to case insensitivity.
-func findWords(words []string) []string {
+//Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
+
+func hasDuplicate(nums []int) bool {
+
+	seen := make(map[int]bool)
+
+	for i := 0; i < len(nums); i++ {
+
+		if seen[nums[i]] {
+			return true
+		}
+		seen[nums[i]] = true
+	}
+	return false
 
 }
