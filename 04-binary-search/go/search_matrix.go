@@ -1,4 +1,4 @@
-package golang
+package main
 
 // You are given an m x n 2-D integer array matrix and an integer target.
 // Each row in matrix is sorted in non-decreasing order.
@@ -6,7 +6,6 @@ package golang
 // Return true if target exists within matrix or false otherwise.
 
 func searchMatrix(matrix [][]int, target int) bool {
-
 	m := len(matrix)
 	n := len(matrix[0])
 
@@ -30,5 +29,4 @@ func searchMatrix(matrix [][]int, target int) bool {
 	}
 
 	return false
-
 }

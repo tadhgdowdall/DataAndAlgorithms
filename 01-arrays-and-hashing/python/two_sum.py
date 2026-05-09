@@ -40,8 +40,5 @@ if __name__ == "__main__":
     print("Two Sum Problem - Multiple Solutions")
     print("=" * 50)
 
-    # Test brute force
     test_solution(two_sum_brute_force, "Brute Force O(n²)")
-
-    # Test hashmap
     test_solution(two_sum_hashmap, "Hash Map O(n)")

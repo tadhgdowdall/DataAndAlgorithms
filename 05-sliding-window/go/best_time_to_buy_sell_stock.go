@@ -1,8 +1,4 @@
-package golang
-
-import (
-	"fmt"
-)
+package main
 
 // LeetCode 121: Best Time to Buy and Sell Stock
 //
@@ -12,27 +8,8 @@ import (
 //
 // Return the maximum profit you can achieve from this transaction.
 // If you cannot achieve any profit, return 0.
-//
-// Example 1:
-// Input: prices = [7,1,5,3,6,4]
-// Output: 5
-// Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-//
-// Example 2:
-// Input: prices = [7,6,4,3,1]
-// Output: 0
-// Explanation: In this case, no transactions are done and the max profit = 0.
-//
-// Constraints:
-// - 1 <= prices.length <= 10^5
-// - 0 <= prices[i] <= 10^4
-
-func main() {
-
-}
 
 func maxProfits(prices []int) int {
-
 	// 2 pointers problem
 
 	left := 0
@@ -52,5 +29,4 @@ func maxProfits(prices []int) int {
 		}
 	}
 	return maxProfit
-
 }

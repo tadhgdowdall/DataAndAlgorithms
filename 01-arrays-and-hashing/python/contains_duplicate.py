@@ -3,7 +3,6 @@ def contains_duplicate_brute_force(nums):
     Brute Force Approach - O(n^2) time, O(1) space
     Check every pair of elements
     """
-    # Your solution here
     pass
 
 
@@ -63,11 +62,6 @@ if __name__ == "__main__":
     print("\nProblem: Given an integer array nums, return true if any value appears")
     print("at least twice in the array, and return false if every element is distinct.")
 
-    # Test brute force
     test_solution(contains_duplicate_brute_force, "Brute Force O(n²)")
-
-    # Test sorting
     test_solution(contains_duplicate_sorting, "Sorting O(n log n)")
-
-    # Test hashset
     test_solution(contains_duplicate_hashset, "Hash Set O(n)")

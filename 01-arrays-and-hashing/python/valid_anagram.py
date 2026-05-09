@@ -3,7 +3,6 @@ def is_anagram_sorting(s, t):
     Sorting Approach - O(n log n) time, O(1) space
     Check if two strings are anagrams by sorting both strings
     """
-    # Your solution here
     pass
 
 
@@ -15,7 +14,6 @@ def is_anagram_hashmap(s, t):
     if len(s) != len(t):
         return False
 
-    # Build Hash Maps
     countS = {}
     countT = {}
 
@@ -28,15 +26,12 @@ def is_anagram_hashmap(s, t):
             return False
     return True
 
-    pass
-
 
 def is_anagram_counter(s, t):
     """
     Counter Approach - O(n) time, O(n) space
     Use Counter from collections module
     """
-    # Your solution here
     pass
 
 
@@ -72,11 +67,6 @@ if __name__ == "__main__":
     )
     print("An anagram is a word formed by rearranging the letters of another word.")
 
-    # Test sorting approach
     test_solution(is_anagram_sorting, "Sorting Approach O(n log n)")
-
-    # Test hashmap approach
     test_solution(is_anagram_hashmap, "Hash Map Approach O(n)")
-
-    # Test counter approach
     test_solution(is_anagram_counter, "Counter Approach O(n)")

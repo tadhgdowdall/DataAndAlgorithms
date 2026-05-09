@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -12,28 +11,22 @@ import (
 // Output: true
 
 func isPalindrome(s string) bool {
-
 	left, right := 0, len(s)-1
 
 	lowerCase := strings.ToLower(s)
 
 	for left <= right {
-
 		if lowerCase[left] != lowerCase[right] {
 			return false
 		}
-
 		left++
 		right--
-
 	}
 
 	return true
-
 }
 
 func isPalindromeRunes(s string) bool {
-
 	runes := []rune(strings.ToLower(s))
 	left, right := 0, len(runes)-1
 	for left < right {
