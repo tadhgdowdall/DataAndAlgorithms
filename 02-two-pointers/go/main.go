@@ -21,4 +21,10 @@ func main() {
 	fmt.Println("\n-- Shortest To Char --")
 	result := shortestToChar("loveleetcode", 'e')
 	fmt.Printf("shortestToChar(\"loveleetcode\", 'e') = %v\n", result)
+
+	// Move Zeroes
+	fmt.Println("\n-- Move Zeroes --")
+	mz := []int{0, 1, 0, 3, 12}
+	moveZeroes(mz)
+	fmt.Printf("moveZeroes([0,1,0,3,12]) = %v\n", mz)
 }
